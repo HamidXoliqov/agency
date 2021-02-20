@@ -1,0 +1,53 @@
+.select2-selection, .select2-selection--single {
+    color: red!important;
+    font-size: 12px!important;
+}
+
+.select2-container--krajee, .select2-selection {
+    box-shadow: none!important;
+}
+.btn-sm {
+    padding: 0.60rem 0.8rem!important;
+}
+.select2-selection__arrow {
+    height: 28px!important;
+}
+.select2-selection__clear {
+    margin-top: -1px!important;
+    right: 25px!important;
+    position: absolute!important;
+}
+.user_info {
+    color: darkred;
+}
+.btn-sm-button {
+    padding: 0.40rem 0.40rem !important;
+}
+.margin-text {
+    padding-left: 5px!important;
+}
+/* pagination style begin */
+.pagination li {border: 1px solid lightgray;padding-top: 5px;padding-bottom: 5px;border-radius: 5px;margin: 0px 2px;} .pagination li a {color: #0d3349;padding: 0px 10px;}  .pagination .disabled {color: #0d3349;padding: 5px 10px;}  .pagination li:hover {background-color: #1b6d85;}  .pagination li a:hover{color: white;}  .pagination .active {background-color: #1b6d85;}  .pagination .active a {color: white;}
+/* pagination style end */
+.datepicker{
+    z-index: 10000!important;
+}
+tr{
+    background-color: #fff!important;
+}
+tr:hover{
+    background-color: #F5F5F5!important;
+}
+.filters:hover{
+    background-color: #fff!important;
+}
+hr {
+    margin-top: 0!important;
+    margin-bottom: 6px!important;
+}
+.card-body {
+    padding: 1.5rem!important;
+}
+.card-header {
+    padding: 1.5rem!important;
+}

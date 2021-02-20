@@ -1,0 +1,58 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\DetailView;
+
+/* @var $this yii\web\View */
+/* @var $model app\modules\subsidy\models\ProjectSubsidy */
+
+$this->title = $model->id;
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Project Subsidies'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+\yii\web\YiiAsset::register($this);
+?>
+<div class="project-subsidy-view">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <p>
+        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
+            'class' => 'btn btn-danger',
+            'data' => [
+                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
+                'method' => 'post',
+            ],
+        ]) ?>
+    </p>
+
+    <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            'id',
+            'appeal_id',
+            'contragent_id',
+            'region_id',
+            'district_id',
+            'contur_number',
+            'counter_ga',
+            'water_pump_count',
+            'bonitet_ball',
+            'plant_all_area_ga',
+            'plant_address',
+            'plant_schema_id',
+            'plant_all_count',
+            'end_date',
+            'job_count',
+            'project_all_price',
+            'project_all_price_currency_id',
+            'status_project',
+            'status',
+            'created_at',
+            'updated_at',
+            'created_by',
+            'updated_by',
+        ],
+    ]) ?>
+
+</div>
